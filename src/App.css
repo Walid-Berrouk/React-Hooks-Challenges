@@ -36,3 +36,476 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Fonts */
+
+.font-verdana {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap'); */
+
+@font-face {
+  font-family: "Handlee";
+  src: url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+}
+
+.font-handlee {
+  font-family: 'Handlee', cursive;
+}
+
+/* Text Styling */
+
+.red-text {
+  color: red;
+}
+
+.red-text-direct-sibling + p {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text-childs > p {
+  color: blue;
+}
+
+.blue-text-sibling ~ p {
+  color: blue;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+h1 { 
+  font-size: 2em; 
+}
+
+.text-big {
+  font-size: 30px;
+}
+
+.text-medium {
+  font-size: 20px;
+}
+
+.deco-dashed {
+  text-decoration: line-through;
+}
+
+.deco-wavy {
+  text-decoration: wavy underline green;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.style-underlined {
+  text-decoration: underline;
+}
+
+.word-sp-20 {
+  word-spacing: 20px;
+}
+
+.letter-sp-5 {
+  letter-spacing: 5px;
+}
+
+/* Display */
+.display-block {
+  display: block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+/* Position */
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* Margin */
+.m-20 {
+  margin: 20px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mb-40 {
+  margin-bottom: 20rem;
+}
+
+.mt-50 {
+  margin-top: 25rem;
+}
+
+.mt-20 {
+  margin-top: 10rem;
+}
+
+/* Padding */
+.p-20 {
+  padding: 20px;
+}
+
+/* Bordering */
+.border {
+  border: 2px solid black;
+}
+
+.rounded {
+  border-radius: 10%;
+}
+
+/* Shadows */
+
+.shadow-box {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+}
+
+/* Backgrounds */
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+/* Width */
+.w-40 {
+  width: 400px;
+}
+
+.w-30 {
+  width: 300px;
+}
+
+.w-20 {
+  width: 200px;
+}
+
+.w-10 {
+  width: 100px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+/* Height */
+
+.h-80 {
+  height: 800px;
+}
+
+.h-60 {
+  height: 600px;
+}
+
+.h-50 {
+  height: 500px;
+}
+
+.h-40 {
+  height: 400px;
+}
+
+.h-30 {
+  height: 300px;
+}
+
+.h-20 {
+  height: 200px;
+}
+
+.h-10 {
+  height: 100px;
+}
+
+.h-full {
+  height: 100vh;
+}
+
+/* FlexBox */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.gap-col-40 {
+  column-gap: 40px;
+}
+
+.gap-col-20 {
+  gap: 0px 20px;
+}
+
+.gap-row-20 {
+  row-gap: 20px;
+}
+
+.gap-40 {
+  gap: 40px 40px;
+}
+
+.gap-80 {
+  gap: 80px 80px;
+}
+
+/* Custom Grid */
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px;
+  background-color: #fff;
+  color: #444;
+  justify-content: center;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+
+}
+
+.a {
+  grid-column: 1 / span 2;
+}
+.b {
+  grid-column: 3 ;
+  grid-row: 1 / span 2;
+}
+.c {
+  grid-column: 1 ;
+  grid-row: 2 ;
+}
+.d {
+  grid-column: 2 ;
+  grid-row: 2 ;
+}
+
+/* Interactions & Animations */
+
+.rounded-on-hover:hover {
+  border-radius: 10%;
+  width: 220px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+
+/* Rolling */
+
+.roll {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* Back and forth */
+
+.back-and-forth {
+  background-color: green;
+  animation:back-and-forth 4s linear infinite;
+}
+@keyframes back-and-forth { 
+  0% { 
+      transform: translate(0px);
+  } 
+
+  25% {
+      transform: translate(100px);
+      background-color: blue;
+  }
+
+  50% {
+      transform: translate(0px);
+      background-color: green;
+  }
+
+  75% {
+      transform: translate(-100px);
+      background-color: yellow;
+  }
+
+  100% { 
+      transform: translate(0px);
+  } 
+}
+
+
+
+/* Loading */
+
+@keyframes loader {
+
+0% {
+  width: 0;
+
+}
+
+20% {
+  width: 10%;
+      
+}
+
+25% {
+  width: 24%;
+}
+
+43% {
+  width: 41%;
+}
+
+56% {
+  width: 50%;
+}
+
+66% {
+  width: 52%;
+}
+
+71% {
+  width: 60%;
+}
+
+75% {
+  width: 76%;
+  
+}
+
+94% {
+  width: 86%;
+}
+
+100% {
+  width: 100%;
+}
+
+}
+
+.progress-bar {
+border-radius: 60px;
+overflow: hidden;
+  width: 100%;
+
+}
+
+.progress-bar span {
+  display: block;
+}
+
+.bar {
+background: rgba(0,0,0,0.075);
+}
+
+.progress {
+animation: loader 8s ease infinite;
+background: #75b800;
+color: #fff;
+padding: 5px;
+width: 0;
+}
+
+.progress-bar {
+left: 50%;
+max-width: 50%;
+position: absolute;
+top: 50%;
+transform: translate3d(-50%,-50%,0);
+}
+
+
+/* Switch Button */
+
+.form-switch.form-switch-xl {
+  margin-bottom: 2rem; /* JUST FOR STYLING PURPOSE */
+}
+
+.form-switch.form-switch-xl .form-check-input {
+  height: 2.5rem;
+  width: calc(4rem + 0.75rem);
+  border-radius: 5rem;
+}
+
+.dark-mode {
+  background-color: rgb(36, 37, 37);
+  color: #fff;
+}
